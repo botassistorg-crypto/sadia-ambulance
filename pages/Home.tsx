@@ -78,41 +78,36 @@ export const Home: React.FC = () => {
               </div>
             </div>
 
-            {/* Hero Stats Cards Floating */}
-            <div className="md:w-5/12 relative">
-               <div className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl shadow-2xl relative">
-                  <div className="absolute -top-12 right-4 bg-white p-4 rounded-full shadow-lg animate-bounce">
-                    <HeartPulse className="text-red-600 w-12 h-12" />
-                  </div>
-                  
-                  <div className="space-y-6">
-                    <div className="bg-red-800/80 p-6 rounded-xl flex items-center gap-4 text-white">
-                      <div className="bg-yellow-400 p-3 rounded-full text-red-900">
-                        <Star className="fill-current" size={24} />
-                      </div>
-                      <div>
-                        <div className="text-3xl font-bold">10,000+</div>
-                        <div className="text-sm opacity-90">Successful Deliveries</div>
-                      </div>
+            {/* Hero Image & Stats */}
+            <div className="md:w-5/12 relative mt-8 md:mt-0">
+               <div className="relative z-10">
+                 <img 
+                   src="https://i.ibb.co.com/WvtBYDKJ/file-00000000e66471faa67d108c67515528.png" 
+                   alt="Sadia Ambulance" 
+                   className="rounded-2xl shadow-2xl border-4 border-white/20 w-full object-cover transform md:rotate-3 hover:rotate-0 transition-transform duration-500"
+                 />
+                 
+                 {/* Floating Stats */}
+                 <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl flex items-center gap-3 animate-bounce">
+                    <div className="bg-green-100 p-2 rounded-full text-green-600">
+                      <Clock size={24} />
                     </div>
+                    <div>
+                      <div className="text-sm font-bold text-gray-800">Response Time</div>
+                      <div className="text-xs text-gray-500">8-12 Minutes</div>
+                    </div>
+                 </div>
 
-                    <div className="bg-white p-6 rounded-xl flex items-center gap-4 shadow-lg">
-                      <div className="relative">
-                        <div className="absolute top-0 right-0 w-3 h-3 bg-green-500 rounded-full ring-2 ring-white animate-pulse"></div>
-                        <div className="bg-gray-100 p-3 rounded-full text-gray-700">
-                          <Clock size={24} />
-                        </div>
-                      </div>
-                      <div>
-                        <div className="text-xl font-bold text-gray-900">Available 24/7</div>
-                        <div className="text-sm text-gray-600">Emergency Response Team Ready</div>
-                        <div className="text-xs text-green-600 font-bold uppercase mt-1 flex items-center gap-1">
-                          <span className="w-2 h-2 bg-green-500 rounded-full"></span> Online Now
-                        </div>
-                      </div>
+                 <div className="absolute -top-6 -right-6 bg-yellow-400 p-4 rounded-xl shadow-xl text-red-900">
+                    <div className="flex items-center gap-2 font-bold">
+                      <Star size={20} fill="currentColor" />
+                      <span>Top Rated</span>
                     </div>
-                  </div>
+                 </div>
                </div>
+               
+               {/* Blur backing */}
+               <div className="absolute inset-0 bg-black/20 blur-2xl transform translate-y-4 rounded-full -z-10"></div>
             </div>
           </div>
         </div>
@@ -189,22 +184,37 @@ export const Home: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {SERVICES.map((service) => (
-              <div key={service.id} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 group">
-                <div className="flex items-start justify-between mb-6">
-                  <div className="bg-red-100 p-4 rounded-xl text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
-                    <service.icon size={32} />
+              <div key={service.id} className="relative h-96 rounded-2xl overflow-hidden group shadow-lg">
+                {/* Background Image */}
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-90 transition-opacity duration-300"></div>
+
+                {/* Content */}
+                <div className="absolute inset-0 p-8 flex flex-col justify-end text-white">
+                  <div className="bg-red-600 w-14 h-14 rounded-xl flex items-center justify-center mb-4 shadow-lg transform group-hover:-translate-y-2 transition-transform duration-300">
+                    <service.icon size={28} className="text-white" />
+                  </div>
+                  
+                  <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
+                  <p className="text-gray-200 mb-6 line-clamp-3 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                  
+                  <div className="space-y-2 border-t border-white/20 pt-4">
+                    {service.features.slice(0, 3).map((feature, idx) => (
+                      <div key={idx} className="flex items-center gap-2 text-sm text-gray-200">
+                        <Check size={14} className="text-green-400 shrink-0" />
+                        <span>{feature}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">{service.title}</h3>
-                <p className="text-slate-600 mb-6">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-sm text-slate-500">
-                      <Check size={16} className="text-green-500" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>
@@ -220,7 +230,7 @@ export const Home: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {COVERAGE_AREAS.slice(0, 16).map((area, index) => (
+            {COVERAGE_AREAS.slice(0, 24).map((area, index) => (
               <div key={index} className="bg-gray-50 p-4 rounded-xl border border-gray-100 hover:border-red-200 hover:shadow-md transition-all text-center group cursor-default">
                 <MapPin className="mx-auto text-gray-400 group-hover:text-red-500 mb-2 transition-colors" size={24} />
                 <h4 className="font-bold text-slate-800">{area.name} <span className="text-xs text-gray-500">({area.zip})</span></h4>
@@ -228,7 +238,7 @@ export const Home: React.FC = () => {
               </div>
             ))}
           </div>
-           {COVERAGE_AREAS.length > 16 && (
+           {COVERAGE_AREAS.length > 24 && (
             <div className="text-center mt-8">
               <Link to="/about" className="text-red-600 font-semibold hover:text-red-800 transition-colors">View All Coverage Areas &rarr;</Link>
             </div>
@@ -310,7 +320,7 @@ export const Home: React.FC = () => {
           <h2 className="text-3xl font-extrabold text-slate-900 mb-8">See Our Service in Action</h2>
           <div className="max-w-4xl mx-auto bg-gray-200 rounded-2xl overflow-hidden shadow-xl relative aspect-video flex items-center justify-center group cursor-pointer">
              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
-             <img src="https://ibb.co.com/0ytYdBJb" alt="Sadia Ambulance" className="absolute inset-0 w-full h-full object-cover" />
+             <img src="https://i.ibb.co.com/99Z58HB9/hero-image.png" alt="Sadia Ambulance" className="absolute inset-0 w-full h-full object-cover" />
              <div className="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform z-10 relative">
                 <Play className="text-white ml-2" size={32} fill="currentColor" />
              </div>
