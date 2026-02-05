@@ -12,7 +12,7 @@ export const SERVICES: Service[] = [
     description: "Advanced oxygen delivery systems for patients requiring respiratory support during transport.",
     icon:  HeartPulse,
     features: ["Portable oxygen concentrators", "Ventilator support available", "Trained respiratory technicians"],
-    image: "https://ibb.co.com/7JkmYtBJ"
+    image: "https://i.ibb.co.com/whc5LrMp/1770273245503-019c2c81-7ce0-7b65-baa3-b09052fc2e35.png"
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const SERVICES: Service[] = [
     description: "Critical care ambulance with ICU-level equipment for serious medical emergencies.",
     icon: Stethoscope,
     features: ["Cardiac monitors", "Defibrillator equipment", "IV fluid administration"],
-    image: "https://ibb.co.com/1GzFnJ8R"
+    image: "https://i.ibb.co.com/WvtBYDKJ/file-00000000e66471faa67d108c67515528.png"
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const SERVICES: Service[] = [
     description: "Specialized freezing ambulance service for preserving deceased individuals during long-distance transport.",
     icon: Thermometer,
     features: ["Temperature control -5°C to -20°C", "Hygienic storage", "Long-distance capability"],
-    image: "https://ibb.co.com/RTJbktzz"
+    image: "https://i.ibb.co.com/4R0tnCPP/file-0000000002a471fab590776ef6f07a7d.png"
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ export const SERVICES: Service[] = [
     description: "Non-emergency patient transport between hospitals and medical facilities.",
     icon: Ambulance,
     features: ["Comfortable stretcher beds", "Wheelchair accessibility", "Inter-hospital transfers"],
-    image: "https://ibb.co.com/0ytYdBJb"
+    image: "https://i.ibb.co.com/99Z58HB9/hero-image.png"
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ export const SERVICES: Service[] = [
     description: "Specialized transport for newborns requiring specialized temperature control and care.",
     icon: UserCheck,
     features: ["Neonatal incubators", "Temperature control systems", "Pediatric-trained staff"],
-    image: "https://ibb.co.com/5xzSwXPh"
+    image: "https://i.ibb.co.com/bRyCDjk5/IMG-20260205-WA0020.jpg"
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ export const SERVICES: Service[] = [
     description: "On-site ambulance service for events, construction sites, and large gatherings.",
     icon: Users,
     features: ["Event standby service", "First aid stations", "Emergency response team"],
-    image: "https://ibb.co.com/7JkmYtBJ"
+    image: "https://i.ibb.co.com/99Z58HB9/hero-image.png"
   }
 ];
 
@@ -151,5 +151,17 @@ export const COVERAGE_AREAS: CoverageArea[] = [
   { "name": "North Katuli", "zip": "4217", "type": "Northern Area" },
   { "name": "Pahartoli", "zip": "4202", "type": "Hills Area" },
   { "name": "Patenga", "zip": "4204", "type": "Beach Resort" },
-  { "name": "Rampura TSO", "zip": "4224", "type": "Telecom Area" }
+  { "name": "Rampura TSO", "zip": "4224", "type": "Telecom Area" },
+  { "name": "Lalkhan Bazar", "zip": "4000", "type": "Central Area" },
+  { "name": "Tiger Pass", "zip": "4000", "type": "Scenic Area" },
+  { "name": "Dewanhat", "zip": "4100", "type": "Commercial" },
+  { "name": "Monsurabad", "zip": "4100", "type": "Transit Hub" },
+  { "name": "Double Mooring", "zip": "4100", "type": "Port Vicinity" },
+  { "name": "Muradpur", "zip": "4212", "type": "Busy Junction" },
+  { "name": "Oxygen", "zip": "4210", "type": "Industrial Belt" },
+  { "name": "Baizid", "zip": "4210", "type": "Industrial" },
+  { "name": "Kalurghat", "zip": "4208", "type": "Bridge Area" },
+  { "name": "Mohra", "zip": "4208", "type": "Outer City" },
+  { "name": "Kaptai Road", "zip": "4208", "type": "Highway" },
+  { "name": "Bahaddarhat", "zip": "4212", "type": "Transit Hub" }
 ];
