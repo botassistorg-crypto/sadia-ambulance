@@ -101,12 +101,12 @@ export const Home: React.FC = () => {
                    </div>
                 </a>
                 
-                <Link to="/contact" className="relative group">
+                <a href="https://maps.app.goo.gl/NAF1eVs7G59AEaNJ6" target="_blank" rel="noopener noreferrer" className="relative group">
                    <div className="bg-[#922b21] hover:bg-[#7b241c] text-white w-32 h-32 rounded-full flex flex-col items-center justify-center shadow-xl border-4 border-[#c0392b] transition-transform hover:scale-105">
                       <MapPin size={28} className="mb-1" />
                       <span className="font-bold text-sm text-center leading-tight">GET<br/>DIRECTIONS</span>
                    </div>
-                </Link>
+                </a>
               </div>
             </div>
 
