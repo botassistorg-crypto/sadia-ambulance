@@ -53,7 +53,11 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 mb-1">Address</h3>
-                  <p className="text-slate-600">C&F Tower, Ma O Shishu Hospital<br/>Zamburi Field, Chattogram 4100</p>
+                  <p className="text-slate-600">
+                    <a href="https://maps.app.goo.gl/NAF1eVs7G59AEaNJ6" target="_blank" rel="noopener noreferrer" className="hover:text-red-600 transition-colors">
+                      C&F Tower, Ma O Shishu Hospital<br/>Zamburi Field, Chattogram 4100
+                    </a>
+                  </p>
                 </div>
               </div>
 
@@ -141,7 +145,7 @@ export const Contact: React.FC = () => {
              <h3 className="text-xl font-bold text-slate-700">Interactive Map</h3>
              <p className="text-slate-500 mb-4">C&F Tower, Ma O Shishu Hospital, Zamburi Field, Chattogram 4100</p>
              <a 
-               href="https://maps.google.com" 
+               href="https://maps.app.goo.gl/NAF1eVs7G59AEaNJ6" 
                target="_blank" 
                rel="noopener noreferrer"
                className="inline-block bg-white text-red-600 px-6 py-2 rounded-full border border-red-600 font-semibold hover:bg-red-50 transition-colors"
