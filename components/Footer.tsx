@@ -61,7 +61,9 @@ export const Footer: React.FC = () => {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-white mt-1 shrink-0" />
-                <span className="text-sm">C&F Tower, Ma O Shishu Hospital, Zambuti Field, Chattogram 4100</span>
+                <a href="https://maps.app.goo.gl/NAF1eVs7G59AEaNJ6" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors">
+                  C&F Tower, Ma O Shishu Hospital, Zambuti Field, Chattogram 4100
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <Clock size={18} className="text-white mt-1 shrink-0" />
