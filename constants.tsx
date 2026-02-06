@@ -36,7 +36,7 @@ export const SERVICES: Service[] = [
     description: "Non-emergency patient transport between hospitals and medical facilities.",
     icon: Ambulance,
     features: ["Comfortable stretcher beds", "Wheelchair accessibility", "Inter-hospital transfers"],
-    image: "https://i.ibb.co.com/99Z58HB9/hero-image.png"
+    image: "https://i.ibb.co.com/P03FM9v/1770295676710-019c2dd7-3070-7ab8-bf60-c0e9a8d7310d.png"
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const SERVICES: Service[] = [
     description: "On-site ambulance service for events, construction sites, and large gatherings.",
     icon: Users,
     features: ["Event standby service", "First aid stations", "Emergency response team"],
-    image: "https://i.ibb.co.com/99Z58HB9/hero-image.png"
+    image: "https://i.ibb.co.com/P03FM9v/1770295676710-019c2dd7-3070-7ab8-bf60-c0e9a8d7310d.png"
   }
 ];
 
@@ -137,10 +137,10 @@ export const COVERAGE_AREAS: CoverageArea[] = [
   { name: "Customs Academy", "zip": "4219", "type": "Training Center" },
   { name: "Polytechnic", "zip": "4209", "type": "Educational" },
   { name: "Sailors Colony", "zip": "4218", "type": "Naval Area" },
-  { name: "Airport", "zip": "4205", "type": "Aviation Hub" },
-  { name: "Bandar", "zip": "4100", "type": "Port Area" },
-  { "name": "GPO", "zip": "4000", "type": "Central Post" },
-  { "name": "Export Processing", "zip": "4223", "type": "EPZ Area" },
+  { name: "Chittagong Airport", "zip": "4205", "type": "Aviation Hub" },
+  { name: "Chittagong Bandar", "zip": "4100", "type": "Port Area" },
+  { "name": "Chittagong GPO/Nimtali", "zip": "4000", "type": "Central Post" },
+  { "name": "Export Processing Zone/EPZ", "zip": "4223", "type": "EPZ Area" },
   { "name": "Firozshah", "zip": "4207", "type": "Colony Area" },
   { "name": "Halishshar", "zip": "4225", "type": "Port Extension" },
   { "name": "Jalalabad", "zip": "4214", "type": "Residential" },
