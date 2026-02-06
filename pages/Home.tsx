@@ -263,7 +263,7 @@ export const Home: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {COVERAGE_AREAS.slice(0, 24).map((area, index) => (
+            {COVERAGE_AREAS.map((area, index) => (
               <div key={index} className="bg-white p-4 rounded-xl shadow-sm hover:shadow-md border border-gray-100 hover:border-red-200 transition-all text-center group cursor-default flex flex-col items-center justify-center h-full">
                 <div className="mb-3 text-slate-400 group-hover:text-red-600 transition-colors">
                   <MapPin size={24} />
@@ -278,13 +278,6 @@ export const Home: React.FC = () => {
               </div>
             ))}
           </div>
-           {COVERAGE_AREAS.length > 24 && (
-            <div className="text-center mt-12">
-              <Link to="/about" className="inline-block text-slate-500 font-semibold hover:text-red-600 transition-colors">
-                + Check Coverage
-              </Link>
-            </div>
-          )}
         </div>
       </section>
 
