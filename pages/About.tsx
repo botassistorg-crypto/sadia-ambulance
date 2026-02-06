@@ -16,7 +16,7 @@ export const About: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-12 items-center mb-20">
           <div className="md:w-1/2">
             <img 
-              src="https://ibb.co.com/0ytYdBJb" 
+              src="https://i.ibb.co.com/WvtBYDKJ/file-00000000e66471faa67d108c67515528.png" 
               alt="Sadia Ambulance Team" 
               className="rounded-2xl shadow-2xl w-full h-auto object-cover"
             />
@@ -40,6 +40,34 @@ export const About: React.FC = () => {
                  <div className="text-sm text-slate-500">Modern Ambulances</div>
                </div>
              </div>
+          </div>
+        </div>
+
+        {/* Fleet Gallery */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+             <h3 className="text-3xl font-bold text-slate-900 mb-4">Our Modern Fleet</h3>
+             <p className="text-slate-600 max-w-2xl mx-auto">Equipped with the latest medical technology to ensure patient safety and comfort.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+               <img src="https://i.ibb.co.com/whc5LrMp/1770273245503-019c2c81-7ce0-7b65-baa3-b09052fc2e35.png" alt="ICU Ambulance Interior" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                 <span className="text-white font-bold text-lg">ICU Support</span>
+               </div>
+            </div>
+             <div className="relative group overflow-hidden rounded-xl shadow-lg">
+               <img src="https://i.ibb.co.com/4R0tnCPP/file-0000000002a471fab590776ef6f07a7d.png" alt="Freezing Ambulance" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                 <span className="text-white font-bold text-lg">Freezing Unit</span>
+               </div>
+            </div>
+             <div className="relative group overflow-hidden rounded-xl shadow-lg">
+               <img src="https://i.ibb.co.com/P03FM9v/1770295676710-019c2dd7-3070-7ab8-bf60-c0e9a8d7310d.png" alt="Standard Ambulance" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                 <span className="text-white font-bold text-lg">Standard Ambulance</span>
+               </div>
+            </div>
           </div>
         </div>
 
